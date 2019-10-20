@@ -1,0 +1,8 @@
+td { font-family: Verdana,Arial,Helvetica,sans-serif; color: #000000; font-size: 12px; line-height: 16px; }
+td h1 { font-family: Tahoma; padding: 1px; padding-left: 4px; color: white; background-color: #303030; font-size: 20px; line-height: 24px; font-weight: bold; }
+
+.h1 { font-family: Times; color: #000000; font-size: 18px; line-height: 20px; font-weight: bold; }
+
+a { color: #b11; TEXT-DECORATION: underline; }
+a:visited {color: #b11}
+a:hover {color: #f88}

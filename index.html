@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <title>ELENA Programming Language</title>
+   <meta name="author" content="Aleksey Rakov">
+   <meta property="og:title" content="ELENA Programming Language"/>
+   <meta property="og:image" content="http://elenalang.sourceforge.net/image_header.jpg"/>
+   <meta name="description" content="ELENA is a general-purpose, pure object-oriented language with late binding">
+   <meta name="keywords" content="ELENA programming language, OOP, programming, dynamic programming">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+   <link href="bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="app.css" />
+   <link rel="stylesheet" href="fonts.css" />
+   <link rel="stylesheet" href="github.css" />   
+</header>     
+<body>
+   <div class="container py-3 py-lg-0">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-menu">
+       <a class="navbar-brand" href="/" id="logo">
+         <img src="logo.png" />
+       </a>
+       <button class="navbar-toggler ml-auto hidden-sm-up float-xs-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item  flex-md-fill text-md-center">
+             <a class="nav-link" href="api/index.html">Standard Library</a>
+           </li>
+           <li class="nav-item flex-md-fill text-md-center">
+             <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang/wiki">Wiki</a>
+           </li>
+           <li class="nav-item  flex-md-fill text-md-center">
+             <a class="nav-link" href="https://www.reddit.com/r/elena_lang/">Reddit</a>
+           </li>
+           <li class="nav-item  flex-md-fill text-md-center">
+             <a class="nav-link" href="https://twitter.com/elena_language">Twitter</a>
+           </li>
+           <li class="nav-item  flex-md-fill text-md-center">
+             <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang/wiki/ELENA-Programming-Manual">Learning</a>
+           </li>
+           <li class="nav-item  flex-md-fill text-md-center">
+             <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang">Source code</a>
+           </li>
+           <li class="nav-item  flex-md-fill text-md-center">
+             <a class="nav-link" href="http://rosettacode.org/wiki/Category:Elena">Rosetta code</a>
+           </li>
+           <li class="nav-item donate flex-md-fill text-md-center">
+             <a class="btn btn-success" href="https://paypal.me/elenaprolang">Donate</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+   </div>
+
+
+<div class="container">
+  <div class="jumbotron" style="text-align: center;" id="main-jumbo">
+    <div class="container page-heading">
+      <h1 class="display-5 main-heading">
+        ELENA Language
+      </h1>
+</br/>
+      <div class="row">
+        <div class="col-lg-3 col-md-1 col-sm-1"></div>
+        <div class="col-lg-3 col-md-5 col-sm-5">
+          <a class="btn btn-success btn-lg btn-block" href="https://github.com/ELENA-LANG/elena-lang/releases/tag/v4.0.5" role="button">Download v4.0.5</a>
+        </br/>
+
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-5 docs">
+          <a class="btn btn-primary btn-lg btn-block" href="https://github.com/ELENA-LANG/elena-lang/wiki/ELENA-Programming-Manual" role="button">Documentation</a>
+        </br/>
+        </div>
+        <div class="col-3 col-md-1 col-sm-1"></div>
+      </div>
+      <div clsss="row">
+        <a class="github-button" href="https://github.com/ELENA-LANG/elena-lang" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ELENA-LANG/elena-lang on GitHub">Star</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid alt-color packages">
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 ecosystem"><hr></div>
+        <div class="col-lg-4 col-md-6 ecosystem section-heading">
+          <h2 class="lead secondary-heading">
+            About
+          </h2>
+        </div>
+        <div class="col-lg-4 col-md-3 ecosystem"><hr></div>
+      </div>
+
+      <br>
+      <p>
+          ELENA is a general-purpose, object-oriented, polymorphic language with late binding.
+          The language features group objects / mixins, message dispatching, class / method templates, ElenaScript, and many others. It is under active development and fun to follow.
+      </p>
+      <br>
+
+    </div>
+</div>
+
+<div class="container-fluid alt-color packages">
+    <br><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 ecosystem"><hr></div>
+        <div class="col-lg-4 col-md-6 ecosystem section-heading">
+          <h2 class="lead secondary-heading">
+            Installation
+          </h2>
+        </div>
+        <div class="col-lg-4 col-md-3 ecosystem"><hr></div>
+      </div>
+
+      <br>
+                <p>To install just unzip all the files into a directory you want.</p>   
+             
+                <p>You may need to add a path to BIN folder to system environment (e.g. &lt;app root&gt;\bin),
+                or use setup executable.</p>
+
+                <p>The language requires Visual C++ Redistributable for VS 2017</p>
+
+                <p>To open, compile or debug the programs and libraries use ELENA GUI IDE (&lt;app root&gt;\bin\elide.exe) or ELENA Command Line Compiler 
+                (<app root>\bin\elc.exe). </p>
+
+                <p>In ELENA IDE you may select File-Open-Open Project option and open an 
+                appropriate project file (*.prj). Then select Project-Compile option to 
+                compile the project and Project-Debug to debug it.</p>
+      <br>
+
+    </div>
+</div>
+
+
+
+<footer class="container-fluid footer-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 footer-menu-item">
+          <h6>Download</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang/releases/tag/v4.0.5">ELENA v4.0.5</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 footer-menu-item">
+          <h6>Documentation</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang/wiki/ELENA-Programming-Manual">ELENA Manual</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="api/index.html">Standard Library</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 footer-menu-item">
+          <h6>Issues</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang/issues/new">Report an Issue</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 footer-menu-item">
+          <h6>Community</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.reddit.com/r/elena_lang/">Reddit</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 footer-menu-item">
+          <h6>Tutorials</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="http://rosettacode.org/wiki/Category:Elena">Rosetta code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang/wiki#tutorials">Tutorials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 footer-menu-item">
+          <h6>Source code</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ELENA-LANG/elena-lang">Source</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://sourceforge.net/projects/elenalang/files/">Binaries mirror</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+  </footer>
+
+<footer class="container-fluid footer-copy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 py-2">
+          <p>
+            ©2019 ELENA Language Project. The website content uses the <a href="https://github.com/ELENA-LANG/elena-lang/blob/master/LICENSE">MIT license</a>.
+          </p>
+        </div>
+        <div class="col-md-2 py-2">
+          <a class="btn btn-success" href="https://paypal.me/elenaprolang">Donate</a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+
+</html>
