@@ -195,6 +195,14 @@ Class <SPAN CLASS="typeNameLabel">AssigningExpression</SPAN></PRE>
 <CODE>expression</CODE>
 </TD>
 </TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system-dynamic.html#AssigningClosure">AssigningClosure</A></SPAN></CODE>
+</TD>
+<TD CLASS="colLast">
+<CODE>assigning</CODE>
+</TD>
+</TR>
 </TABLE>
 </LI>
 </UL>
@@ -242,7 +250,16 @@ Class <SPAN CLASS="typeNameLabel">AssigningExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -382,7 +399,16 @@ Class <SPAN CLASS="typeNameLabel">ClosureExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -438,6 +464,14 @@ Class <SPAN CLASS="typeNameLabel">CodeblockExpression</SPAN></PRE>
 </TD>
 <TD CLASS="colLast">
 <CODE>statements</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'expressions'ScopeVariable&gt;</A></SPAN></CODE>
+</TD>
+<TD CLASS="colLast">
+<CODE>variables</CODE>
 </TD>
 </TR>
 </TABLE>
@@ -685,7 +719,16 @@ Class <SPAN CLASS="typeNameLabel">CodeblockExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -799,7 +842,16 @@ Class <SPAN CLASS="typeNameLabel">ConstantExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -859,10 +911,10 @@ Class <SPAN CLASS="typeNameLabel">DeclarationExpression</SPAN></PRE>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<CODE><SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE>
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system-dynamic.html#LocalClosure">LocalClosure</A></SPAN></CODE>
 </TD>
 <TD CLASS="colLast">
-<CODE>defaultValue</CODE>
+<CODE>local</CODE>
 </TD>
 </TR>
 </TABLE>
@@ -912,7 +964,16 @@ Class <SPAN CLASS="typeNameLabel">DeclarationExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -984,6 +1045,14 @@ Class <SPAN CLASS="typeNameLabel">DeclaringAndAssigningExpression</SPAN></PRE>
 <CODE>expression</CODE>
 </TD>
 </TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system-dynamic.html#AssigningClosure">AssigningClosure</A></SPAN></CODE>
+</TD>
+<TD CLASS="colLast">
+<CODE>assigning</CODE>
+</TD>
+</TR>
 </TABLE>
 </LI>
 </UL>
@@ -1031,7 +1100,16 @@ Class <SPAN CLASS="typeNameLabel">DeclaringAndAssigningExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -1388,7 +1466,16 @@ Class <SPAN CLASS="typeNameLabel">DynamicMessageCallExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -1931,11 +2018,20 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>Statement(<I>params</I>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression[]</A></SPAN>)
+<CODE>NestedCodeBlock(<I>params</I>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression[]</A></SPAN>)
 </CODE>
 </TD>
 </TR>
 <TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>Statement(<I>params</I>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression[]</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1944,7 +2040,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1953,7 +2049,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1962,7 +2058,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1971,7 +2067,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1980,7 +2076,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1989,7 +2085,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -1998,7 +2094,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2007,7 +2103,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2016,7 +2112,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2025,7 +2121,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2034,7 +2130,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2043,7 +2139,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2052,7 +2148,7 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 </CODE>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN></CODE></TD>
@@ -2099,16 +2195,16 @@ Interface <SPAN CLASS="typeNameLabel">Expression</SPAN></PRE>
 <CODE>
 abstract &nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
 </CODE>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
-<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+abstract &nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1,T2,T3&gt;">List&lt;'$auto'system'collections'Tuple'$auto'system'collections'Tuple#2,'$auto'system'collections'Tuple#2&system'Message,'$auto'system'collections'Tuple#2&system'Message&system'dynamic'ClosureTape&gt;</A></SPAN>)
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -2117,11 +2213,20 @@ abstract &nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object<
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>eval()
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1,T2,T3&gt;">List&lt;'$auto'system'collections'Tuple'$auto'system'collections'Tuple#2,'$auto'system'collections'Tuple#2&system'Message,'$auto'system'collections'Tuple#2&system'Message&system'dynamic'ClosureTape&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
 <TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>eval()
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-dynamic.html#ClosureTape">ClosureTape</A></SPAN></CODE></TD>
@@ -2468,7 +2573,16 @@ Class <SPAN CLASS="typeNameLabel">FunctionCallExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -2590,7 +2704,16 @@ Class <SPAN CLASS="typeNameLabel">GetDynamicPropertyExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -2830,7 +2953,16 @@ Class <SPAN CLASS="typeNameLabel">GetPropertyExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -3027,7 +3159,16 @@ Class <SPAN CLASS="typeNameLabel">IfExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -3242,7 +3383,16 @@ Class <SPAN CLASS="typeNameLabel">LoopExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -3489,7 +3639,16 @@ Class <SPAN CLASS="typeNameLabel">MessageCallExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -3655,7 +3814,216 @@ Class <SPAN CLASS="typeNameLabel">MethodExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+</LI>
+</UL>
+</DIV>
+<HR>
+</DIV>
+<A NAME="NestedBlockExpression">
+</A>
+<!-- ======== START OF CLASS DATA ======== -->
+<DIV CLASS="header">
+<DIV CLASS="subTitle">
+system'dynamic'expressions'</DIV>
+<H2 title="NestedBlockExpression" class="title">NestedBlockExpression</H2>
+</DIV>
+<DIV CLASS="contentContainer">
+<UL CLASS="inheritance">
+<LI>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">system'dynamic'expressions'Expression</A></SPAN></LI>
+<LI>
+<UL CLASS="inheritance">
+<LI>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#CodeblockExpression">system'dynamic'expressions'CodeblockExpression</A></SPAN></LI>
+<LI>
+<UL CLASS="inheritance">
+<LI>
+system'dynamic'expressions'NestedBlockExpression</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+<DIV CLASS="description">
+<BR>
+<HR>
+<PRE STYLE="padding-top: 15px;">
+Class <SPAN CLASS="typeNameLabel">NestedBlockExpression</SPAN></PRE>
+<BR>
+</DIV>
+<DIV CLASS="summary">
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Field Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Field</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system.html#Array&lt;T1&gt;">Array&lt;system'dynamic'expressions'Expression&gt;</A></SPAN></CODE>
+</TD>
+<TD CLASS="colLast">
+<CODE>statements</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'expressions'ScopeVariable&gt;</A></SPAN></CODE>
+</TD>
+<TD CLASS="colLast">
+<CODE>variables</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== CONSTRUCTOR SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Constructor Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Constructor</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>new(<I>params</I>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression[]</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#Expression">Expression</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#NestedBlockExpression">NestedBlockExpression</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>#constructor2()
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== METHOD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Method Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -3760,7 +4128,16 @@ Class <SPAN CLASS="typeNameLabel">NestedExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -3865,7 +4242,16 @@ Class <SPAN CLASS="typeNameLabel">ReturnExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -4140,7 +4526,16 @@ Class <SPAN CLASS="typeNameLabel">SetDynamicPropertyExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -4270,7 +4665,16 @@ Class <SPAN CLASS="typeNameLabel">SetPropertyExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -4555,7 +4959,16 @@ Class <SPAN CLASS="typeNameLabel">StatementExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -4830,7 +5243,16 @@ Class <SPAN CLASS="typeNameLabel">SymbolExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
@@ -5049,6 +5471,14 @@ Class <SPAN CLASS="typeNameLabel">VariableExpression</SPAN></PRE>
 <CODE>variable</CODE>
 </TD>
 </TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE><SPAN CLASS="memberNameLink"><A HREF="system-dynamic.html#LocalClosure">LocalClosure</A></SPAN></CODE>
+</TD>
+<TD CLASS="colLast">
+<CODE>local</CODE>
+</TD>
+</TR>
 </TABLE>
 </LI>
 </UL>
@@ -5096,7 +5526,16 @@ Class <SPAN CLASS="typeNameLabel">VariableExpression</SPAN></PRE>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>, <SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+<CODE>prepare(<SPAN CLASS="memberNameLink"><A HREF="system-dynamic-expressions.html#ExpressionScope">ExpressionScope</A></SPAN>)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>saveTo(<SPAN CLASS="memberNameLink"><A HREF="system-collections.html#List&lt;T1&gt;">List&lt;system'dynamic'DynamicClosure&gt;</A></SPAN>)
 </CODE>
 </TD>
 </TR>
