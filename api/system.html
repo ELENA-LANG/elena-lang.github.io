@@ -1674,7 +1674,7 @@ system'BoolValue</LI>
 <BR>
 <HR>
 <PRE STYLE="padding-top: 15px;">
-abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
+a common boolean value</PRE>
 <BR>
 </DIV>
 <DIV CLASS="summary">
@@ -1695,6 +1695,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <i>static get</i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>MinValue</CODE>
+<div class="block">
+return the default value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1703,6 +1705,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <i>static get</i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>true</CODE>
+<div class="block">
+returns true value.</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1711,6 +1715,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <i>static get</i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>false</CODE>
+<div class="block">
+returns false value.</div>
 </TD>
 </TR>
 </TABLE>
@@ -1773,6 +1779,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <i>abstract get</i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Inverted</CODE>
+<div class="block">
+inverts the value;<br/>has to be implemented</div>
 </TD>
 </TR>
 </TABLE>
@@ -1794,6 +1802,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> f)
 </CODE>
+<div class="block">
+determines whether the specified object is equal to the current object boolean value;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1803,6 +1813,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>if(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction)
 </CODE>
+<div class="block">
+executes trueAction if the value is true;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1812,6 +1824,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>if(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction, <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> falseAction)
 </CODE>
+<div class="block">
+executes trueAction if the value is true or falseAction otherwise;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1821,6 +1835,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>ifnot(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> action)
 </CODE>
+<div class="block">
+executes action if the value is false;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1830,6 +1846,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>iif(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueVal, <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> falseVal)
 </CODE>
+<div class="block">
+returns trueVal if the value is true or falseVal otherwise;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1839,6 +1857,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>or(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical OR operation<;br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1848,6 +1868,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>and(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical AND operation;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1857,6 +1879,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>xor(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical XOR operation;<br/>has to be implemented</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1866,6 +1890,8 @@ abstract Class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>clone()
 </CODE>
+<div class="block">
+clones the value;<br/>has to be implemented</div>
 </TD>
 </TR>
 </TABLE>
@@ -1926,6 +1952,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <i>get</i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Inverted</CODE>
+<div class="block">
+always returns true</div>
 </TD>
 </TR>
 </TABLE>
@@ -1947,6 +1975,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>if(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction)
 </CODE>
+<div class="block">
+always returns nil</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1956,6 +1986,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>if(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction, <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> falseAction)
 </CODE>
+<div class="block">
+executes else-action</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1965,6 +1997,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>ifnot(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> action)
 </CODE>
+<div class="block">
+executes the action</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1974,6 +2008,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>iif(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueVal, <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> falseVal)
 </CODE>
+<div class="block">
+always returns falseVal.</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -1983,6 +2019,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>or(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical OR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -1992,6 +2030,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>and(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical AND operation;<br/>Always return false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -2001,6 +2041,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>xor(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical XOR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2010,6 +2052,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> f)
 </CODE>
+<div class="block">
+determines whether the specified object is equal to the current object boolean value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -2019,6 +2063,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+returns literal representation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2028,6 +2074,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#false</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>clone()
 </CODE>
+<div class="block">
+returns itself</div>
 </TD>
 </TR>
 </TABLE>
@@ -2088,6 +2136,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <i>get</i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Inverted</CODE>
+<div class="block">
+always returns false.</div>
 </TD>
 </TR>
 </TABLE>
@@ -2109,6 +2159,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>if(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction)
 </CODE>
+<div class="block">
+executes trueAction.</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2118,6 +2170,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>if(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction, <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> falseAction)
 </CODE>
+<div class="block">
+executes trueAction.</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -2127,6 +2181,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>ifnot(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueAction)
 </CODE>
+<div class="block">
+always returns nil.</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2136,6 +2192,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>iif(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> trueVal, <SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> falseVal)
 </CODE>
+<div class="block">
+always returns trueVal.</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -2145,6 +2203,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>or(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical OR operation;<br/>Always return true</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2154,6 +2214,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>and(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical AND operation.</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -2163,6 +2225,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>xor(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> expr)
 </CODE>
+<div class="block">
+executes logical XOR operation.</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2172,6 +2236,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> b)
 </CODE>
+<div class="block">
+determines whether the specified object is equal to the current object boolean value.</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -2181,6 +2247,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+returns literal representation.</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -2190,6 +2258,8 @@ sealed Class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></PRE>
 <TD CLASS="colLast">
 <CODE>clone()
 </CODE>
+<div class="block">
+Returns itself.</div>
 </TD>
 </TR>
 </TABLE>
@@ -10422,6 +10492,8 @@ Returns true if the specified object is equal to the current object; otherwise, 
 <TD CLASS="colLast">
 <CODE>notequal(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> o)
 </CODE>
+<div class="block">
+Returns true if the specified object is not equal to the current object; otherwise, false. By default it inverts the result of equal[2].</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10431,6 +10503,8 @@ Returns true if the specified object is equal to the current object; otherwise, 
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+Returns the string representation. By default it returns the class name.</div>
 </TD>
 </TR>
 </TABLE>
@@ -10452,6 +10526,8 @@ Returns true if the specified object is equal to the current object; otherwise, 
 <TD CLASS="colLast">
 <CODE>back(<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">Object</A></SPAN> o)
 </CODE>
+<div class="block">
+returns the parameter</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10461,6 +10537,8 @@ Returns true if the specified object is equal to the current object; otherwise, 
 <TD CLASS="colLast">
 <CODE>then(<SPAN CLASS="memberNameLink"><A HREF="system.html#Func">Func</A></SPAN> code)
 </CODE>
+<div class="block">
+executes the parameter function</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
