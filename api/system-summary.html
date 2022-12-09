@@ -44,11 +44,11 @@ Class Summary
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#$inline0">$inline0</A>
+<A HREF="system.html#$inline1">$inline1</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">$inline0</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">$inline1</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -57,7 +57,8 @@ public class <SPAN CLASS="typeNameLabel">$inline0</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">BaseNumber</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">BaseNumber</SPAN><BR/>
+<I>a base numeric value</I></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -66,7 +67,8 @@ public class <SPAN CLASS="typeNameLabel">BaseNumber</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">BaseValue</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">BaseValue</SPAN><BR/>
+<I>a base value</I></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -75,7 +77,8 @@ public class <SPAN CLASS="typeNameLabel">BaseValue</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">BaseVariable</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">BaseVariable</SPAN><BR/>
+<I>variable base class</I></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -84,7 +87,8 @@ public class <SPAN CLASS="typeNameLabel">BaseVariable</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">BoolValue</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">BoolValue</SPAN><BR/>
+<I>a common boolean value</I></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -111,7 +115,8 @@ public class <SPAN CLASS="typeNameLabel">BoolValue#true</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">ByteNumber</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">ByteNumber</SPAN><BR/>
+<I>an unsigned 8 bit integer</I></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -156,10 +161,19 @@ public class <SPAN CLASS="typeNameLabel">Exception</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">Func</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">Func</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#Func1">Func1</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+abstract public class <SPAN CLASS="typeNameLabel">Func1</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <A HREF="system.html#Handle">Handle</A>
 </TD>
@@ -168,22 +182,34 @@ public class <SPAN CLASS="typeNameLabel">Func</SPAN></DIV>
 public class <SPAN CLASS="typeNameLabel">Handle</SPAN></DIV>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <A HREF="system.html#IntBaseNumber">IntBaseNumber</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">IntBaseNumber</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">IntBaseNumber</SPAN><BR/>
+<I>a base integer value</I></DIV>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <A HREF="system.html#IntNumber">IntNumber</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">IntNumber</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">IntNumber</SPAN><BR/>
+<I>A signed 32 bit integer</I></DIV>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#LongNumber">LongNumber</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">LongNumber</SPAN><BR/>
+<I>A signed 64 bit integer value</I></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -219,7 +245,27 @@ public class <SPAN CLASS="typeNameLabel">NilReferenceException</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">Object</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">Object</SPAN><BR/>
+<I>a common ancestor</I></DIV>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#OutOfMemoryException">OutOfMemoryException</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">OutOfMemoryException</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#RealNumber">RealNumber</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">RealNumber</SPAN><BR/>
+<I>A 64bit float numeric value</I></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -228,7 +274,8 @@ public class <SPAN CLASS="typeNameLabel">Object</SPAN></DIV>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">ShortNumber</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">ShortNumber</SPAN><BR/>
+<I>a signed 16 bit integer</I></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -251,14 +298,25 @@ public class <SPAN CLASS="typeNameLabel">WideString</SPAN></DIV>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#Func1">Func1</A>
+<A HREF="system.html#UIntNumber">UIntNumber</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">Func1</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">UIntNumber</SPAN><BR/>
+<I>A unsigned 32 bit integer</I></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#Variable">Variable</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">Variable</SPAN><BR/>
+<I>A generic variable.<br/>Extends an assigned value</I></DIV>
+</TD>
+</TR>
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <A HREF="system.html#byteConvertor">byteConvertor</A>
 </TD>
@@ -267,7 +325,7 @@ public class <SPAN CLASS="typeNameLabel">Func1</SPAN></DIV>
 public class <SPAN CLASS="typeNameLabel">byteConvertor</SPAN></DIV>
 </TD>
 </TR>
-<TR CLASS="rowColor">
+<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <A HREF="system.html#shortConvertor">shortConvertor</A>
 </TD>
@@ -276,13 +334,40 @@ public class <SPAN CLASS="typeNameLabel">byteConvertor</SPAN></DIV>
 public class <SPAN CLASS="typeNameLabel">shortConvertor</SPAN></DIV>
 </TD>
 </TR>
-<TR CLASS="altColor">
+<TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <A HREF="system.html#intConvertor">intConvertor</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
 public class <SPAN CLASS="typeNameLabel">intConvertor</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#uintConvertor">uintConvertor</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">uintConvertor</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#longConvertor">longConvertor</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">longConvertor</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<A HREF="system.html#realConvertor">realConvertor</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">realConvertor</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -305,83 +390,59 @@ public class <SPAN CLASS="typeNameLabel">stringConvertor</SPAN></DIV>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#OutOfMemoryException">OutOfMemoryException</A>
+<A HREF="system.html#Reference&lt;T1&gt;">Reference&lt;T1&gt;</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">OutOfMemoryException</SPAN></DIV>
+public template <SPAN CLASS="typeNameLabel">Reference&lt;T1&gt;</SPAN><BR/>
+<I>a variable template</I></DIV>
 </TD>
+</TR>
+</TABLE>
+</LI>
+<LI CLASS="blockList">
+<TABLE CLASS="typeSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<HEADER>
+Symbol Summary
+</HEADER>
+<TR>
+<TH CLASS="colFirst" scope="col">Symbol name</TH>
+<TH CLASS="colLast" scope="col">Description</TH>
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#system@Reference#1&system@ByteNumber">system@Reference#1&system@ByteNumber</A>
+<A HREF="system.html#console">console</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Reference#1&system@ByteNumber</SPAN></DIV>
+console</DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#system@Reference#1&system@ShortNumber">system@Reference#1&system@ShortNumber</A>
+<A HREF="system.html#false">false</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Reference#1&system@ShortNumber</SPAN></DIV>
+false</DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#system@Reference#1&system@IntNumber">system@Reference#1&system@IntNumber</A>
+<A HREF="system.html#newLine">newLine</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Reference#1&system@IntNumber</SPAN></DIV>
+newLine</DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="system.html#system@Reference#1&system@CharValue">system@Reference#1&system@CharValue</A>
+<A HREF="system.html#true">true</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Reference#1&system@CharValue</SPAN></DIV>
-</TD>
-</TR>
-<TR CLASS="altColor">
-<TD CLASS="colFirst">
-<A HREF="system.html#system@Array#1&system@ByteNumber">system@Array#1&system@ByteNumber</A>
-</TD>
-<TD CLASS="colLast">
-<DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Array#1&system@ByteNumber</SPAN></DIV>
-</TD>
-</TR>
-<TR CLASS="rowColor">
-<TD CLASS="colFirst">
-<A HREF="system.html#system@Reference#1&system@BoolValue">system@Reference#1&system@BoolValue</A>
-</TD>
-<TD CLASS="colLast">
-<DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Reference#1&system@BoolValue</SPAN></DIV>
-</TD>
-</TR>
-<TR CLASS="altColor">
-<TD CLASS="colFirst">
-<A HREF="system.html#system@Reference#1&system@String">system@Reference#1&system@String</A>
-</TD>
-<TD CLASS="colLast">
-<DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Reference#1&system@String</SPAN></DIV>
-</TD>
-</TR>
-<TR CLASS="rowColor">
-<TD CLASS="colFirst">
-<A HREF="system.html#system@Func#2&system@Exception&system@Object">system@Func#2&system@Exception&system@Object</A>
-</TD>
-<TD CLASS="colLast">
-<DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">system@Func#2&system@Exception&system@Object</SPAN></DIV>
+true</DIV>
 </TD>
 </TR>
 </TABLE>
