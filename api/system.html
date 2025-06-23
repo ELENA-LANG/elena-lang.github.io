@@ -920,6 +920,14 @@ Copies a source array to target at index</div>
 <CODE><i>cast</i>()</CODE>
 </TD>
 </TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Array">Array</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>cast</i>()</CODE>
+</TD>
+</TR>
 </TABLE>
 </LI>
 </UL>
@@ -3620,6 +3628,8 @@ Returns the value as a real number</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -3629,6 +3639,8 @@ Returns the value as a real number</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -3649,6 +3661,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>add(o)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -3658,6 +3672,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>subtract(o)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -3667,6 +3683,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>multiply(o)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -3676,6 +3694,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>divide(o)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -3685,6 +3705,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -3694,6 +3716,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -3703,6 +3727,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -3943,6 +3969,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> b)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -3963,6 +3991,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> s)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -8864,6 +8894,8 @@ system'IntNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>()
 </CODE>
+<div class="block">
+Returns the default value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -8895,6 +8927,8 @@ Creates the object with specified value</div>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> b)
 </CODE>
+<div class="block">
+converts the argument to IntNumber</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -8904,6 +8938,8 @@ Creates the object with specified value</div>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> s)
 </CODE>
+<div class="block">
+converts the argument to IntNumber</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -8913,6 +8949,8 @@ Creates the object with specified value</div>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#UShortNumber">UShortNumber</A></SPAN> s)
 </CODE>
+<div class="block">
+converts the argument to IntNumber</div>
 </TD>
 </TR>
 </TABLE>
@@ -8953,6 +8991,8 @@ Creates the object with the maximal value</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value (0)</div>
 </TD>
 </TR>
 </TABLE>
@@ -8973,6 +9013,8 @@ Creates the object with the maximal value</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Negative()</CODE>
+<div class="block">
+Returns the negated value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9066,6 +9108,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9075,6 +9119,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9093,6 +9139,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>add(o)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9102,6 +9150,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>subtract(o)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9111,6 +9161,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>multiply(o)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9120,6 +9172,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>divide(o)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9129,6 +9183,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9138,6 +9194,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9147,6 +9205,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the IntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9156,6 +9216,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>band(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation with a variable value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9165,6 +9227,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>bor(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation with a variable value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9174,6 +9238,8 @@ Returns the unsigned integer</div>
 <TD CLASS="colLast">
 <CODE>bxor(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation with a variable value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9271,6 +9337,8 @@ Compares the integer value</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9280,6 +9348,8 @@ Compares the integer value</div>
 <TD CLASS="colLast">
 <CODE>notequal(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -9289,6 +9359,8 @@ Compares the integer value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9508,7 +9580,7 @@ Returns the product</div>
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
 <div class="block">
-Returns the result of integer division</div>
+Returns the result of the division as a real number</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9661,6 +9733,8 @@ Clones the value</div>
 <TD CLASS="colLast">
 <CODE>shiftLeft(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the left by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -9670,6 +9744,8 @@ Clones the value</div>
 <TD CLASS="colLast">
 <CODE>shiftRight(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the right by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10540,6 +10616,8 @@ Returns the maximal value</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value (0)</div>
 </TD>
 </TR>
 </TABLE>
@@ -10560,6 +10638,8 @@ Returns the maximal value</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Negative()</CODE>
+<div class="block">
+Returns the negated value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10653,6 +10733,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10662,6 +10744,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10671,6 +10755,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+Returns literal representation.</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10680,6 +10766,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>add(n)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10689,6 +10777,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>subtract(n)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10698,6 +10788,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>multiply(n)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10707,6 +10799,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>divide(n)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10716,6 +10810,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10725,6 +10821,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10734,6 +10832,8 @@ Returns a real value</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10765,6 +10865,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> b)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10783,6 +10885,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> s)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10801,6 +10905,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10810,6 +10916,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10819,6 +10927,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10828,6 +10938,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the integer value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10837,6 +10949,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10846,6 +10960,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10855,6 +10971,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10864,6 +10982,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of integer division</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10873,6 +10993,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10882,6 +11004,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10891,6 +11015,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10900,6 +11026,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of integer division</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10909,6 +11037,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10918,6 +11048,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10927,6 +11059,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10936,6 +11070,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of integer division</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10945,6 +11081,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10954,6 +11092,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10963,6 +11103,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10972,6 +11114,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of integer division</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10981,6 +11125,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10990,6 +11136,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10999,6 +11147,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11008,6 +11158,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of integer division</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11017,6 +11169,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum as a real number</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11026,6 +11180,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference as a real number</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11035,6 +11191,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product as a real number</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11044,6 +11202,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of a division as a real number</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11053,6 +11213,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>band(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11062,6 +11224,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bor(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11071,6 +11235,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bxor(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11080,6 +11246,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>band(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11089,6 +11257,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bor(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11098,6 +11268,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bxor(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11107,6 +11279,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>band(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11116,6 +11290,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bor(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11125,6 +11301,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bxor(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11134,6 +11312,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>band(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11143,6 +11323,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bor(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11152,6 +11334,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bxor(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11161,6 +11345,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>band(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11170,6 +11356,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bor(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11179,6 +11367,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>bxor(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11188,6 +11378,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>shiftLeft(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the right by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -11197,6 +11389,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>shiftRight(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the right by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -11206,6 +11400,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>clone()
 </CODE>
+<div class="block">
+Returns the value copy</div>
 </TD>
 </TR>
 </TABLE>
@@ -12743,6 +12939,145 @@ system'OutOfRangeException</LI>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#OutOfRangeException">OutOfRangeException</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>new(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> message)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<HR>
+</DIV>
+<A NAME="PropertyMessageName">
+</A>
+<!-- ======== START OF CLASS DATA ======== -->
+<DIV CLASS="header">
+<DIV CLASS="subTitle">
+system'</DIV>
+<H2 title="PropertyMessageName" class="title">PropertyMessageName</H2>
+</DIV>
+<DIV CLASS="contentContainer">
+<DIV CLASS="description">
+<BR>
+<HR>
+<PRE STYLE="padding-top: 15px;">
+public class <SPAN CLASS="typeNameLabel">PropertyMessageName</SPAN></PRE>
+<BR>
+</DIV>
+<UL CLASS="inheritance">
+<LI>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">system'Object</A></SPAN></LI>
+<LI>
+<UL CLASS="inheritance">
+<LI>
+system'PropertyMessageName</LI>
+</UL>
+</LI>
+</UL>
+<!-- ========== FIELD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Field Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Field</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+</CODE></TD>
+<TD CLASS="colLast">
+<CODE>value</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== CONSTRUCTOR SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Constructor Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Constructor / Static Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#PropertyMessageName">PropertyMessageName</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> s)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<i>internal </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#PropertyMessageName">PropertyMessageName</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>load(<SPAN CLASS="memberNameLink"><A HREF="system.html#Message">Message</A></SPAN> mssg)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== STATIC PROPERTY SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Static Property Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Static Property</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#MessageName">MessageName</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>Default()</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== METHOD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Method Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>toPrintable()
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+</CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>dispatch</i>()
+</CODE>
+<div class="block">
+Qualifies incoming messages and redirects to the target</div>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#MessageName">MessageName</A></SPAN> subject)
 </CODE>
 </TD>
 </TR>
@@ -14552,6 +14887,8 @@ Returns the maxial value (128)</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#SByteNumber">SByteNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value</div>
 </TD>
 </TR>
 </TABLE>
@@ -14657,6 +14994,8 @@ Returns the value as a real number</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -14666,6 +15005,8 @@ Returns the value as a real number</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -14686,6 +15027,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>add(o)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -14695,6 +15038,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>subtract(o)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -14704,6 +15049,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>multiply(o)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -14713,6 +15060,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>divide(o)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -14722,6 +15071,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -14731,6 +15082,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -14740,6 +15093,8 @@ returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the SByteNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -14980,6 +15335,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#SByteNumber">SByteNumber</A></SPAN> b)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15000,6 +15357,8 @@ Compares the value</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> s)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15021,7 +15380,7 @@ Compares the value</div>
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
 <div class="block">
-Compares the value</div>
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15043,7 +15402,7 @@ Compares the value</div>
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
 <div class="block">
-Compares the value</div>
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15065,7 +15424,7 @@ Compares the value</div>
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
 <div class="block">
-Compares the value</div>
+Returns the true if the object is less than an argument;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15551,6 +15910,8 @@ creates the object with specified value</div>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Converts from an integer</div>
 </TD>
 </TR>
 </TABLE>
@@ -15591,6 +15952,8 @@ Returns the maxial value (32767)</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the value value (0)</div>
 </TD>
 </TR>
 </TABLE>
@@ -15611,6 +15974,8 @@ Returns the maxial value (32767)</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Negative()</CODE>
+<div class="block">
+Returns negated value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -15704,6 +16069,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -15713,6 +16080,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15722,6 +16091,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+returns the literal presentation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -15731,6 +16102,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>add(o)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15740,6 +16113,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>subtract(o)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -15749,6 +16124,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>multiply(o)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15758,6 +16135,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>divide(o)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -15767,6 +16146,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -15776,6 +16157,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -15785,6 +16168,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the ShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18129,6 +18514,8 @@ system'UIntNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> b)
 </CODE>
+<div class="block">
+converts the argument to UIntNumber</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18138,6 +18525,8 @@ system'UIntNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> s)
 </CODE>
+<div class="block">
+converts the argument to UIntNumber</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18147,6 +18536,8 @@ system'UIntNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+converts the argument to UIntNumber</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18156,6 +18547,8 @@ system'UIntNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Creates the object with specified value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18165,6 +18558,8 @@ system'UIntNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>()
 </CODE>
+<div class="block">
+Returns the default value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18223,6 +18618,8 @@ Creates the object with the maximal value</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value (0)</div>
 </TD>
 </TR>
 </TABLE>
@@ -18285,6 +18682,8 @@ Returns the byte value</div>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE><i>cast</i>()</CODE>
+<div class="block">
+Returns the signed integer</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18326,6 +18725,8 @@ Returns the real number</div>
 <TD CLASS="colLast">
 <CODE>less(n)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18335,6 +18736,8 @@ Returns the real number</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18355,6 +18758,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>add(n)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18364,6 +18769,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>subtract(n)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18373,6 +18780,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>multiply(n)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18382,6 +18791,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>divide(n)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18391,6 +18802,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the sum of the object and a variable value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18400,6 +18813,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the difference of the object and a variable value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18409,6 +18824,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the product of the object and a variable value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18418,6 +18835,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#BaseVariable">BaseVariable</A></SPAN> v)
 </CODE>
+<div class="block">
+Returns the result of integer division</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18427,6 +18846,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18436,6 +18857,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18445,6 +18868,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise XOR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UIntNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18751,6 +19176,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum as a long integer</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18760,6 +19187,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference as a long integer</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18769,6 +19198,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product as a long integer</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18778,6 +19209,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#LongNumber">LongNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of integer division as a long integer</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18787,6 +19220,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>add(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the sum as a real number</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18796,6 +19231,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>subtract(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the difference as a real number</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18805,6 +19242,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>multiply(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the product as a real number</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -18814,6 +19253,8 @@ Returns the result of integer division</div>
 <TD CLASS="colLast">
 <CODE>divide(<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Returns the result of the division as a real number</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18988,6 +19429,8 @@ Returns the result of bitwise XOR operation</div>
 <TD CLASS="colLast">
 <CODE>shiftLeft(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the left by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -18997,6 +19440,8 @@ Returns the result of bitwise XOR operation</div>
 <TD CLASS="colLast">
 <CODE>shiftLeft(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the left by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -19006,6 +19451,8 @@ Returns the result of bitwise XOR operation</div>
 <TD CLASS="colLast">
 <CODE>shiftRight(<SPAN CLASS="memberNameLink"><A HREF="system.html#UIntNumber">UIntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the right by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19015,6 +19462,8 @@ Returns the result of bitwise XOR operation</div>
 <TD CLASS="colLast">
 <CODE>shiftRight(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> val)
 </CODE>
+<div class="block">
+shifts an integer value to the right by a specified number of bits</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -19024,6 +19473,8 @@ Returns the result of bitwise XOR operation</div>
 <TD CLASS="colLast">
 <CODE>clone()
 </CODE>
+<div class="block">
+Returns the value copy</div>
 </TD>
 </TR>
 </TABLE>
@@ -19625,6 +20076,8 @@ creates the object with specified value</div>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+tries to convert the integer number o to unsigned short number</div>
 </TD>
 </TR>
 </TABLE>
@@ -19665,6 +20118,8 @@ Returns the maxial value (65535)</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#UShortNumber">UShortNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value (0)</div>
 </TD>
 </TR>
 </TABLE>
@@ -19685,6 +20140,8 @@ Returns the maxial value (65535)</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#UShortNumber">UShortNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Negative()</CODE>
+<div class="block">
+Returns negated value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19788,6 +20245,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19797,6 +20256,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -19806,6 +20267,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+returns the literal presentation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19815,6 +20278,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>add(o)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -19824,6 +20289,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>subtract(o)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19833,6 +20300,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>multiply(o)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -19842,6 +20311,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>divide(o)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19851,6 +20322,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>band(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise AND operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -19860,6 +20333,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>bor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19869,6 +20344,8 @@ Returns the real number value</div>
 <TD CLASS="colLast">
 <CODE>bxor(n)
 </CODE>
+<div class="block">
+Returns the result of bitwise OR operation;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the UShortNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
