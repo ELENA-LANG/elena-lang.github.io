@@ -4691,6 +4691,8 @@ Returns the maximal possible character value (010FFFFh)</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#CharValue">CharValue</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value (0)</div>
 </TD>
 </TR>
 </TABLE>
@@ -4751,6 +4753,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE><i>cast</i>()</CODE>
+<div class="block">
+converts the character value to the UTF8 string</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -4759,6 +4763,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <SPAN CLASS="memberNameLink"><A HREF="system.html#WideString">WideString</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE><i>cast</i>()</CODE>
+<div class="block">
+converts the character value to the UTF16 string</div>
 </TD>
 </TR>
 </TABLE>
@@ -4780,6 +4786,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>less(o)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the CharValue type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -4789,6 +4797,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the CharValue type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -4798,6 +4808,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+returns the literal presentation</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -4807,6 +4819,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#CharValue">CharValue</A></SPAN> val)
 </CODE>
+<div class="block">
+Compares the value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -4816,6 +4830,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#CharValue">CharValue</A></SPAN> val)
 </CODE>
+<div class="block">
+Returns the true if the object value is less than an argument one;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -4825,6 +4841,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Compares the value with a character numeric value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -4834,6 +4852,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> s)
 </CODE>
+<div class="block">
+If the UTF8 string contains a single character, compares the value with an object value;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -4843,6 +4863,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>equal(<SPAN CLASS="memberNameLink"><A HREF="system.html#WideString">WideString</A></SPAN> s)
 </CODE>
+<div class="block">
+If the UTF16 string contains a single character, compares the value with an object value;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -4852,6 +4874,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> s)
 </CODE>
+<div class="block">
+If the UTF8 string contains a single character, compares the value with an object value;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -4861,6 +4885,8 @@ Retuns the number of bytes to represent the symbol in UTF-16</div>
 <TD CLASS="colLast">
 <CODE>less(<SPAN CLASS="memberNameLink"><A HREF="system.html#WideString">WideString</A></SPAN> s)
 </CODE>
+<div class="block">
+If the UTF16 string contains a single character, compares the value with an object value;<br/>otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10133,7 +10159,7 @@ system'</DIV>
 <HR>
 <PRE STYLE="padding-top: 15px;">
 public class <SPAN CLASS="typeNameLabel">KeyValue</SPAN><BR/>
-<I>A key - object pair<br/>Extends the object with a key property</I></PRE>
+<I>A key - value pair<br/>Extends the object with a key property</I></PRE>
 <BR>
 </DIV>
 <UL CLASS="inheritance">
@@ -10191,7 +10217,7 @@ system'KeyValue</LI>
 <CODE>new(key, value)
 </CODE>
 <div class="block">
-Creates a new object</div>
+Creates a new key-value pair</div>
 </TD>
 </TR>
 </TABLE>
@@ -10233,6 +10259,8 @@ Returns the value</div>
 <TD CLASS="colLast">
 <CODE>Value(value)
 </CODE>
+<div class="block">
+Set the key</div>
 </TD>
 </TR>
 </TABLE>
@@ -10254,6 +10282,8 @@ Returns the value</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the argument with the object value field</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -10263,6 +10293,8 @@ Returns the value</div>
 <TD CLASS="colLast">
 <CODE>toPrintable()
 </CODE>
+<div class="block">
+returns the literal presentation of the value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -10273,7 +10305,7 @@ Returns the value</div>
 <CODE><i>dispatch</i>()
 </CODE>
 <div class="block">
-Redirects the incoming messages to the object</div>
+Redirects the incoming messages to the value</div>
 </TD>
 </TR>
 </TABLE>
@@ -12205,20 +12237,20 @@ system'NilReferenceException</LI>
 </UL>
 <HR>
 </DIV>
-<A NAME="nilValue">
+<A NAME="NilValue">
 </A>
 <!-- ======== START OF CLASS DATA ======== -->
 <DIV CLASS="header">
 <DIV CLASS="subTitle">
 system'</DIV>
-<H2 title="nilValue" class="title">nilValue</H2>
+<H2 title="NilValue" class="title">NilValue</H2>
 </DIV>
 <DIV CLASS="contentContainer">
 <DIV CLASS="description">
 <BR>
 <HR>
 <PRE STYLE="padding-top: 15px;">
-public singleton <SPAN CLASS="typeNameLabel">nilValue</SPAN><BR/>
+public singleton <SPAN CLASS="typeNameLabel">NilValue</SPAN><BR/>
 <I>A nil value</I></PRE>
 <BR>
 </DIV>
@@ -12228,7 +12260,7 @@ public singleton <SPAN CLASS="typeNameLabel">nilValue</SPAN><BR/>
 <LI>
 <UL CLASS="inheritance">
 <LI>
-system'nilValue</LI>
+system'NilValue</LI>
 </UL>
 </LI>
 </UL>
@@ -12249,7 +12281,7 @@ system'nilValue</LI>
 <CODE>equal(object)
 </CODE>
 <div class="block">
-Returns true if the specified object is nil.</div>
+Returns true if the specified object is nil. Otherwise the result is false</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -13631,6 +13663,8 @@ system'RealNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Converts the value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -13640,6 +13674,8 @@ system'RealNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#ByteNumber">ByteNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Converts the value</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -13649,6 +13685,8 @@ system'RealNumber</LI>
 <TD CLASS="colLast">
 <CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> n)
 </CODE>
+<div class="block">
+Converts the value</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -13733,6 +13771,8 @@ Returns the maximal value</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Default()</CODE>
+<div class="block">
+Returns the default value (0)</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -13771,6 +13811,8 @@ Returns the positive infinity</div>
 <i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#RealNumber">RealNumber</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>Pi()</CODE>
+<div class="block">
+Returns Pi value</div>
 </TD>
 </TR>
 </TABLE>
@@ -13814,6 +13856,8 @@ Negates the value</div>
 <TD CLASS="colLast">
 <CODE>less(n)
 </CODE>
+<div class="block">
+Returns the true if the object is less than an argument;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the LongNumber type when it is possible and compared</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -13823,6 +13867,8 @@ Negates the value</div>
 <TD CLASS="colLast">
 <CODE>equal(o)
 </CODE>
+<div class="block">
+Compares the value;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the RealNumber type when it is possible and compared; otherwise returns false</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -13843,6 +13889,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>add(n)
 </CODE>
+<div class="block">
+Returns the sum;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the RealNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -13852,6 +13900,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>subtract(n)
 </CODE>
+<div class="block">
+Returns the difference;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the RealNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -13861,6 +13911,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>multiply(n)
 </CODE>
+<div class="block">
+Returns the product;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the RealNumber type</div>
 </TD>
 </TR>
 <TR CLASS="altColor">
@@ -13870,6 +13922,8 @@ Returns the literal presentation</div>
 <TD CLASS="colLast">
 <CODE>divide(n)
 </CODE>
+<div class="block">
+Returns the result of integer division;<br/>If no appropriate method overloading is found, an argument <b>o</b> is converted to the RealNumber type</div>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -19610,6 +19664,105 @@ Returns the value copy</div>
 </UL>
 <HR>
 </DIV>
+<A NAME="UnsafeArray">
+</A>
+<!-- ======== START OF CLASS DATA ======== -->
+<DIV CLASS="header">
+<DIV CLASS="subTitle">
+system'</DIV>
+<H2 title="UnsafeArray" class="title">UnsafeArray</H2>
+</DIV>
+<DIV CLASS="contentContainer">
+<DIV CLASS="description">
+<BR>
+<HR>
+<PRE STYLE="padding-top: 15px;">
+public class <SPAN CLASS="typeNameLabel">UnsafeArray</SPAN></PRE>
+<BR>
+</DIV>
+<UL CLASS="inheritance">
+<LI>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">system'Object</A></SPAN></LI>
+<LI>
+<UL CLASS="inheritance">
+<LI>
+system'UnsafeArray</LI>
+</UL>
+</LI>
+</UL>
+<!-- ========== FIELD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Field Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Field</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+</CODE></TD>
+<TD CLASS="colLast">
+<CODE>_pointer</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== CONSTRUCTOR SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Constructor Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Constructor / Static Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#UnsafeArray">UnsafeArray</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>()
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#UnsafeArray">UnsafeArray</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#UnsafePointer">UnsafePointer</A></SPAN> ptr)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== METHOD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Method Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#UnsafePointer">UnsafePointer</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>at(<SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> index)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<HR>
+</DIV>
 <A NAME="UnsafePointer">
 </A>
 <!-- ======== START OF CLASS DATA ======== -->
@@ -19876,6 +20029,143 @@ system'UnsafePointer</LI>
 </CODE></TD>
 <TD CLASS="colLast">
 <CODE>copyTo(<SPAN CLASS="memberNameLink"><A HREF="system.html#Array&lt;T1&gt;">system'ByteNumber<I>[]</I></A></SPAN> target, <SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> index, <SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> len)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<HR>
+</DIV>
+<A NAME="UnsafePointer&lt;T1&gt;">
+</A>
+<!-- ======== START OF CLASS DATA ======== -->
+<DIV CLASS="header">
+<DIV CLASS="subTitle">
+system'</DIV>
+<H2 title="UnsafePointer&lt;T1&gt;" class="title">UnsafePointer&lt;T1&gt;</H2>
+</DIV>
+<DIV CLASS="contentContainer">
+<DIV CLASS="description">
+<BR>
+<HR>
+<PRE STYLE="padding-top: 15px;">
+public template <SPAN CLASS="typeNameLabel">UnsafePointer&lt;T1&gt;</SPAN></PRE>
+<BR>
+</DIV>
+<UL CLASS="inheritance">
+<LI>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#Object">system'Object</A></SPAN></LI>
+<LI>
+<UL CLASS="inheritance">
+<LI>
+system'UnsafePointer&lt;T1&gt;</LI>
+</UL>
+</LI>
+</UL>
+<!-- ========== FIELD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Field Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Field</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+</CODE></TD>
+<TD CLASS="colLast">
+<CODE>_pointer</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== CONSTRUCTOR SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Constructor Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Constructor / Static Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="-system.html#UnsafePointer&lt;T1&gt;">UnsafePointer&lt;T1&gt;</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>()
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="-system.html#UnsafePointer&lt;T1&gt;">UnsafePointer&lt;T1&gt;</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#UnsafePointer&lt;T1&gt;">UnsafePointer&lt;T1&gt;</A></SPAN> ptr)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="-system.html#UnsafePointer&lt;T1&gt;">UnsafePointer&lt;T1&gt;</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system.html#UnsafePointer">UnsafePointer</A></SPAN> ptr)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<SPAN CLASS="memberNameLink"><A HREF="-system.html#UnsafePointer&lt;T1&gt;">UnsafePointer&lt;T1&gt;</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE><i>constructor</i>(<SPAN CLASS="memberNameLink"><A HREF="system-$private.html#T1">T1</A></SPAN> obj)
+</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== PROPERTY SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Property Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Property</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-$private.html#T1">T1</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>Value()</CODE>
+</TD>
+</TR>
+</TABLE>
+</LI>
+</UL>
+<!-- ========== METHOD SUMMARY =========== -->
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Method Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Method</TH>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+</CODE></TD>
+<TD CLASS="colLast">
+<CODE>copyTo(<SPAN CLASS="memberNameLink"><A HREF="system-$private.html#T1">T1</A></SPAN> value, <SPAN CLASS="memberNameLink"><A HREF="system.html#IntNumber">IntNumber</A></SPAN> size)
 </CODE>
 </TD>
 </TR>
@@ -22254,6 +22544,43 @@ system'</DIV>
 <i>public </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>NewLineConstant</CODE>
+</TD>
+</TABLE>
+</LI>
+</UL>
+</DIV>
+<HR>
+</DIV>
+<A NAME="nilValue">
+</A>
+<!-- ======== START OF SYMBOL DATA ======== -->
+<DIV CLASS="header">
+<DIV CLASS="subTitle">
+system'</DIV>
+<H2 title="nilValue" class="title">nilValue</H2>
+</DIV>
+<DIV CLASS="contentContainer">
+<DIV CLASS="description">
+<BR>
+<HR>
+<PRE STYLE="padding-top: 15px;">
+</PRE>
+<BR>
+</DIV>
+<DIV CLASS="contentContainer">
+<UL CLASS="blockList">
+<LI CLASS="blockList">
+<H3>Symbol Summary</H3>
+<TABLE CLASS="memberSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
+<TR>
+<TH CLASS="colFirst" scope="col">Modifier and Type</TH>
+<TH CLASS="colLast" scope="col">Name</TH>
+</TR>
+<TD CLASS="colFirst">
+<CODE>
+<i>public </i>&nbsp;</CODE></TD>
+<TD CLASS="colLast">
+<CODE>nilValue</CODE>
 </TD>
 </TABLE>
 </LI>

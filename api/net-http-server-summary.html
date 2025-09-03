@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE>
-ELENA Standard Library 6.5: Module net'http
+ELENA Standard Library 6.5: Module net'http'server
 </TITLE>
 <meta name="collection" content="api">
 <LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
@@ -25,7 +25,7 @@ ELENA&nbsp;Standard&nbsp;Library<br>6.5
 </DIV>
 <DIV CLASS="header">
 <H1>
-Module net'http
+Module net'http'server
 </H1>
 </DIV>
 <DIV CLASS="docSummary">
@@ -44,112 +44,110 @@ Class Summary
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpBody">HttpBody</A>
+<A HREF="net-http-server.html#BaseHttpErrorHandler">BaseHttpErrorHandler</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpBody</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">BaseHttpErrorHandler</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpClient">HttpClient</A>
+<A HREF="net-http-server.html#DummyHttpGetHandler">DummyHttpGetHandler</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpClient</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">DummyHttpGetHandler</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpException">HttpException</A>
+<A HREF="net-http-server.html#DummyHttpHandlerFactory">DummyHttpHandlerFactory</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpException</SPAN></DIV>
+public singleton <SPAN CLASS="typeNameLabel">DummyHttpHandlerFactory</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpFirstHeader">HttpFirstHeader</A>
+<A HREF="net-http-server.html#HttpErrorHandler">HttpErrorHandler</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpFirstHeader</SPAN></DIV>
+public singleton <SPAN CLASS="typeNameLabel">HttpErrorHandler</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpHeaders">HttpHeaders</A>
+<A HREF="net-http-server.html#HttpServerRequest">HttpServerRequest</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpHeaders</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">HttpServerRequest</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpRequest">HttpRequest</A>
+<A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpRequest</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">HttpServerResponse</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#HttpResponse">HttpResponse</A>
+<A HREF="net-http-server.html#HttpsServer">HttpsServer</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">HttpResponse</SPAN></DIV>
+public class <SPAN CLASS="typeNameLabel">HttpsServer</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#SocketFactory">SocketFactory</A>
+<A HREF="net-http-server.html#IHttpErrorHandler">IHttpErrorHandler</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">SocketFactory</SPAN></DIV>
+abstract public class <SPAN CLASS="typeNameLabel">IHttpErrorHandler</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#Uri">Uri</A>
+<A HREF="net-http-server.html#IHttpHandler">IHttpHandler</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-public class <SPAN CLASS="typeNameLabel">Uri</SPAN></DIV>
-</TD>
-</TR>
-</TABLE>
-</LI>
-<LI CLASS="blockList">
-<TABLE CLASS="typeSummary" BORDER="0" CELLPADDING="3" CELLSPACING="0">
-<HEADER>
-Symbol Summary
-</HEADER>
-<TR>
-<TH CLASS="colFirst" scope="col">Symbol name</TH>
-<TH CLASS="colLast" scope="col">Description</TH>
-</TR>
-<TR CLASS="altColor">
-<TD CLASS="colFirst">
-<A HREF="net-http.html#HTTP_PORT">HTTP_PORT</A>
-</TD>
-<TD CLASS="colLast">
-<DIV CLASS="block">
-HTTP_PORT</DIV>
+abstract public class <SPAN CLASS="typeNameLabel">IHttpHandler</SPAN></DIV>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
-<A HREF="net-http.html#SocketFactory#initializer$inline0">SocketFactory#initializer$inline0</A>
+<A HREF="net-http-server.html#IHttpHandlerFactory">IHttpHandlerFactory</A>
 </TD>
 <TD CLASS="colLast">
 <DIV CLASS="block">
-SocketFactory#initializer$inline0</DIV>
+abstract public class <SPAN CLASS="typeNameLabel">IHttpHandlerFactory</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<A HREF="net-http-server.html#IHttpServer">IHttpServer</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+abstract public class <SPAN CLASS="typeNameLabel">IHttpServer</SPAN></DIV>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<A HREF="net-http-server.html#SimpleHttpServer">SimpleHttpServer</A>
+</TD>
+<TD CLASS="colLast">
+<DIV CLASS="block">
+public class <SPAN CLASS="typeNameLabel">SimpleHttpServer</SPAN></DIV>
 </TD>
 </TR>
 </TABLE>
