@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
 <TITLE>
-ELENA Standard Library 6.7: Module net'http'server
+ELENA Standard Library 6.8: Module net'http'server
 </TITLE>
 <meta name="collection" content="api">
 <LINK REL ="stylesheet" TYPE="text/css" HREF="stylesheet.css" TITLE="Style">
@@ -19,7 +19,7 @@ ELENA Standard Library 6.7: Module net'http'server
 </UL>
 <DIV CLASS="aboutLanguage">
 <STRONG>
-ELENA&nbsp;Standard&nbsp;Library<br>6.7
+ELENA&nbsp;Standard&nbsp;Library<br>6.8
 </STRONG>
 </DIV>
 </DIV>
@@ -69,7 +69,7 @@ net'http'server'BaseHttpErrorHandler</LI>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>getNotFoundResponse()
+<CODE>getInternalErrorResponse(<SPAN CLASS="memberNameLink"><A HREF="system.html#Exception">Exception</A></SPAN> ex)
 </CODE>
 </TD>
 </TR>
@@ -78,7 +78,7 @@ net'http'server'BaseHttpErrorHandler</LI>
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>getInternalErrorResponse(<SPAN CLASS="memberNameLink"><A HREF="system.html#Exception">Exception</A></SPAN> ex)
+<CODE>getNotFoundResponse()
 </CODE>
 </TD>
 </TR>
@@ -370,18 +370,18 @@ net'http'server'HttpServerProvider</LI>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
-<SPAN CLASS="memberNameLink"><A HREF="system-net.html#INetListener">INetListener</A></SPAN></CODE></TD>
+</CODE></TD>
 <TD CLASS="colLast">
-<CODE>start(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> protocol, <SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> port, <SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> noDelay)
+<CODE>shutdown()
 </CODE>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
-</CODE></TD>
+<SPAN CLASS="memberNameLink"><A HREF="system-net.html#INetListener">INetListener</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>shutdown()
+<CODE>start(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> protocol, <SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> port, <SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> noDelay)
 </CODE>
 </TD>
 </TR>
@@ -485,9 +485,9 @@ net'http'server'HttpServerRequest</LI>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
-<i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
+<i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http.html#HttpHeaders">HttpHeaders</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>Protocol()</CODE>
+<CODE>Headers()</CODE>
 </TD>
 </TR>
 <TR CLASS="rowColor">
@@ -509,9 +509,9 @@ net'http'server'HttpServerRequest</LI>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
-<i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http.html#HttpHeaders">HttpHeaders</A></SPAN></CODE></TD>
+<i>get </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>Headers()</CODE>
+<CODE>Protocol()</CODE>
 </TD>
 </TR>
 </TABLE>
@@ -529,22 +529,13 @@ net'http'server'HttpServerRequest</LI>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
-<i>internal </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-threading.html#Task">Task</A></SPAN></CODE></TD>
+<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>readHeaderAsync()
+<CODE>readAsString()
 </CODE>
 </TD>
 </TR>
 <TR CLASS="rowColor">
-<TD CLASS="colFirst">
-<CODE>
-<i>internal </i>&nbsp;</CODE></TD>
-<TD CLASS="colLast">
-<CODE>readHeader()
-</CODE>
-</TD>
-</TR>
-<TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
 <SPAN CLASS="memberNameLink"><A HREF="system-threading.html#Task&lt;T1&gt;">Task&lt;system'String&gt;</A></SPAN></CODE></TD>
@@ -553,12 +544,21 @@ net'http'server'HttpServerRequest</LI>
 </CODE>
 </TD>
 </TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<i>internal </i>&nbsp;</CODE></TD>
+<TD CLASS="colLast">
+<CODE>readHeader()
+</CODE>
+</TD>
+</TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
-<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN></CODE></TD>
+<i>internal </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-threading.html#Task">Task</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>readAsString()
+<CODE>readHeaderAsync()
 </CODE>
 </TD>
 </TR>
@@ -738,6 +738,24 @@ net'http'server'IHttpErrorHandler</LI>
 <CODE>
 <i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
+<CODE>getInternalErrorResponse(<SPAN CLASS="memberNameLink"><A HREF="system.html#Exception">Exception</A></SPAN> ex)
+</CODE>
+</TD>
+</TR>
+<TR CLASS="rowColor">
+<TD CLASS="colFirst">
+<CODE>
+<i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
+<CODE>getNotFoundResponse()
+</CODE>
+</TD>
+</TR>
+<TR CLASS="altColor">
+<TD CLASS="colFirst">
+<CODE>
+<i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
+<TD CLASS="colLast">
 <CODE>handle(<SPAN CLASS="memberNameLink"><A HREF="system.html#Exception">Exception</A></SPAN> ex)
 </CODE>
 </TD>
@@ -748,24 +766,6 @@ net'http'server'IHttpErrorHandler</LI>
 <i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-threading.html#Task&lt;T1&gt;">Task&lt;net'http'server'HttpServerResponse&gt;</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
 <CODE>handleAsync(<SPAN CLASS="memberNameLink"><A HREF="system.html#Exception">Exception</A></SPAN> ex)
-</CODE>
-</TD>
-</TR>
-<TR CLASS="altColor">
-<TD CLASS="colFirst">
-<CODE>
-<i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
-<TD CLASS="colLast">
-<CODE>getNotFoundResponse()
-</CODE>
-</TD>
-</TR>
-<TR CLASS="rowColor">
-<TD CLASS="colFirst">
-<CODE>
-<i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="net-http-server.html#HttpServerResponse">HttpServerResponse</A></SPAN></CODE></TD>
-<TD CLASS="colLast">
-<CODE>getInternalErrorResponse(<SPAN CLASS="memberNameLink"><A HREF="system.html#Exception">Exception</A></SPAN> ex)
 </CODE>
 </TD>
 </TR>
@@ -977,18 +977,18 @@ net'http'server'IHttpServerProvider</LI>
 <TR CLASS="altColor">
 <TD CLASS="colFirst">
 <CODE>
-<i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-net.html#INetListener">INetListener</A></SPAN></CODE></TD>
+<i>abstract </i>&nbsp;</CODE></TD>
 <TD CLASS="colLast">
-<CODE>start(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> protocol, <SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> port, <SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> noDelay)
+<CODE>shutdown()
 </CODE>
 </TD>
 </TR>
 <TR CLASS="rowColor">
 <TD CLASS="colFirst">
 <CODE>
-<i>abstract </i>&nbsp;</CODE></TD>
+<i>abstract </i>&nbsp;<SPAN CLASS="memberNameLink"><A HREF="system-net.html#INetListener">INetListener</A></SPAN></CODE></TD>
 <TD CLASS="colLast">
-<CODE>shutdown()
+<CODE>start(<SPAN CLASS="memberNameLink"><A HREF="system.html#String">String</A></SPAN> protocol, <SPAN CLASS="memberNameLink"><A HREF="system.html#ShortNumber">ShortNumber</A></SPAN> port, <SPAN CLASS="memberNameLink"><A HREF="system.html#BoolValue">BoolValue</A></SPAN> noDelay)
 </CODE>
 </TD>
 </TR>
@@ -1126,7 +1126,7 @@ net'http'server'SimpleHttpServer</LI>
 <CODE>
 </CODE></TD>
 <TD CLASS="colLast">
-<CODE>start()
+<CODE>net@http@server@SimpleHttpServer$$run()
 </CODE>
 </TD>
 </TR>
@@ -1135,7 +1135,7 @@ net'http'server'SimpleHttpServer</LI>
 <CODE>
 </CODE></TD>
 <TD CLASS="colLast">
-<CODE>net@http@server@SimpleHttpServer$$run()
+<CODE>start()
 </CODE>
 </TD>
 </TR>
@@ -1155,7 +1155,7 @@ net'http'server'SimpleHttpServer</LI>
 </UL>
 <DIV CLASS="aboutLanguage">
 <STRONG>
-ELENA&nbsp;Standard&nbsp;Library<br>6.7
+ELENA&nbsp;Standard&nbsp;Library<br>6.8
 </STRONG>
 </DIV>
 </DIV>
